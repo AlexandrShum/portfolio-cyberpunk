@@ -1,31 +1,27 @@
 import React, { FC } from "react";
-import { Header } from "../components";
-import Image from "next/image"
+import {
+  Header,
+  MainPageContent,
+  DownloadCVButton,
+  BlockWithBorderLeft,
+  BlockWithBorderRight,
+} from "../components";
 
 export const HomePage: FC = () => {
-
   return (
-    <div className="flex w-full justify-evenly h-full">
-      <div className="h-[100%] bg-[url('/main_page_picture.png')] w-full">
+    <div className="flex h-[100vh] relative overflow-hidden w-full">
+      <BlockWithBorderLeft />
+      <div className="bg-[url('/main_page_picture.png')] bg-100 bg-no-repeat w-[23%] inner-shadow"></div>
 
-      </div>
-      <div className="w-full">
+      <BlockWithBorderRight>
         <Header />
-        <div className=" text-left">
-
-          <div className="text-[#08CAD4] font-semibold text-2xl leading-8">
-            {"Hi, i`M Alexander sHUMAKOV".toUpperCase()}
+        <div className=" m-auto pt-[10%] w-[60%] relative z-20">
+          <MainPageContent />
+          <div className="pt-16 float-right">
+            <DownloadCVButton />
           </div>
         </div>
-      </div>
+      </BlockWithBorderRight>
     </div>
-
-  )
-}
-
-// font-family: Chakra Petch;
-// font-size: 24px;
-// font-weight: 600;
-// line-height: 31.2px;
-// letter-spacing: 0.2em;
-// text-align: left;  
+  );
+};

@@ -21,14 +21,39 @@
 
 @layer components {
   .nav-link {
-    @apply font-chakra text-2xl font-semibold leading-8 text-[#FFFFF0]
+    @apply font-chakra text-[32px] font-semibold leading-8 text-[#FFFFF0] cursor-pointer
+  }
+
+  .cuted-button {
+    @apply bg-[#FFFFF0] w-[275px] h-[56px] relative flex items-center cursor-pointer
   }
 }
-
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgba(16, 23, 32, 1);
+}
+
+.cuted-button {
+  background: linear-gradient(56deg, transparent 10px, #FFFFF0 0);
+}
+
+.gradient-border-right {
+  padding: 3px;
+  background-image: -webkit-linear-gradient(315deg, #4959EC26 15%, #545AE9 25%, #C161C9 45%, #4959EC 65%, #4959EC26 80%, #4959EC 90%, #C161C9 100%);
+  background-image: -moz-linear-gradient(315deg, #ee82ee, slateblue, #ffd86a, purple);
+  background-image: -o-linear-gradient(315deg, #4959EC, slateblue, #ffd86a, purple);
+}
+
+.gradient-border-left {
+  padding: 3px;
+  background-image: -webkit-linear-gradient(352deg, #4959EC26 15%, #545AE9 25%, #C161C9 45%, #4959EC 65%, #4959EC26 80%, #4959EC 90%, #C161C9 100%);
+  background-image: -moz-linear-gradient(352deg, #ee82ee, slateblue, #ffd86a, purple);
+  background-image: -o-linear-gradient(352deg, #4959EC, slateblue, #ffd86a, purple);
+}
+
+.inner-shadow {
+  box-shadow: 0px 10px 40px 30px #050b12f5 inset;
 }
 
 @layer utilities {

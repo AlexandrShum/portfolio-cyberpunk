@@ -1,9 +1,9 @@
-import { HomePage } from "../PagesLayout";
+import { ExperiencePage } from "../../PagesLayout";
 
 export default function Home() {
   return (
     <main className="flex justify-center items-center">
-      <HomePage />
+      <ExperiencePage />
     </main>
   );
 }

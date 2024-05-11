@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Head from "next/head";
+
 import "./globals.css";
 
 
@@ -14,7 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className=" font-chakra">{children}</body>
+      <Head>
+        <link rel="icon" href="/favicon.png" sizes="auto"/>
+      </Head>
+      <body className=" font-chakra max-w-[1920px] m-auto">{children}</body>
     </html>
   );
 }
