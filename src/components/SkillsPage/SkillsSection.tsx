@@ -7,7 +7,7 @@ export const SkillSection: FC = () => (
   <div>
     <div className="flex flex-wrap gap-10 pb-14">
       {skillsData.map((skill: SkillDataInterface, i: number) => (
-        <SkillsBlock {...skill} />
+        <SkillsBlock {...skill} key={i} />
       ))}
     </div>
     <div>

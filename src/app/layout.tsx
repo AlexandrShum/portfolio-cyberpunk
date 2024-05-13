@@ -19,7 +19,7 @@ export default function RootLayout({
       <Head>
         <link rel="icon" href="/favicon.png" sizes="auto"/>
       </Head>
-      <body className=" font-chakra max-w-[1920px] m-auto">{children}</body>
+      <body className=" font-chakra max-w-[1920px] max-h-[1080px] m-auto">{children}</body>
     </html>
   );
 }

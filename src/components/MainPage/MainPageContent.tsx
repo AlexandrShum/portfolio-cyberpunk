@@ -3,7 +3,7 @@ import React, { FC } from "react";
 export const MainPageContent: FC = () => {
   return (
     <div className=" text-left">
-      <div className=" text-titleColor font-semibold text-2xl tracking-[0.4rem] text-justify">
+      <div className=" text-titleColor font-semibold text-2xl tracking-title text-justify">
         {"HI, I`M ALEXANDR SHUMAKOV"}
       </div>
       <div className=" font-normal text-[22px] pb-7 italic">

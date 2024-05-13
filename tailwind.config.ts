@@ -17,7 +17,7 @@ const config: Config = {
         chakra: ['Chakra Petch', 'sans-serif'],
       },
       letterSpacing: {
-        "20": "0.7rem"
+        "title": "0.4rem",
       },
       backgroundSize: {
         "100": "100%, 100%"

@@ -7,7 +7,7 @@ import { socialMediaData, SocialMediaInterface } from "./socialMediaData";
 export const ContactsSection: FC = () => (
   <div className="h-[50%] flex flex-col justify-between">
     <div>
-      <div className="text-title tracking-[0.4rem] pb-2">
+      <div className="text-title tracking-title pb-2">
         {"Get in touch".toUpperCase()}
       </div>
       <div className=" text-description">
