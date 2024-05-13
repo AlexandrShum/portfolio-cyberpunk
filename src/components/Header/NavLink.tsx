@@ -10,14 +10,14 @@ export const NavLink: FC<LinkDataInterface> = ({ title, href }) => {
 
   if (pathName === href) {
     return (
-      <div className="nav-link pb-2 mx-4 text-[#08CAD4] border-b-2 border-b-[#08CAD4]">
+      <div className="nav-link pb-2 mx-4 text-titleColor border-b-2 border-b-[#08CAD4]">
         <Link href={href}>{title}</Link>
       </div>
     );
   }
 
   return (
-    <div className="nav-link mx-4 hover:text-[#08CAD4]">
+    <div className="nav-link mx-4 hover:text-titleColor">
       <Link href={href}>{title}</Link>
     </div>
   );

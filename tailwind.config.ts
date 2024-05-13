@@ -8,6 +8,10 @@ const config: Config = {
     "./src/PagesLayout/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
+    colors: {
+      "titleColor": "#08CAD4",
+      "mainTextColor": "#FFFFF0"
+    },
     extend: {
       fontFamily: {
         chakra: ['Chakra Petch', 'sans-serif'],

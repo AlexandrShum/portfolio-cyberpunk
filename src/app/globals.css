@@ -21,11 +21,27 @@
 
 @layer components {
   .nav-link {
-    @apply font-chakra text-[32px] font-semibold leading-8 text-[#FFFFF0] cursor-pointer
+    @apply font-chakra text-[32px] font-semibold leading-8 text-mainTextColor cursor-pointer;
+  }
+
+  .text-title {
+    @apply text-titleColor text-2xl font-semibold;
+  }
+
+  .text-description {
+    @apply text-mainTextColor text-xl font-normal;
   }
 
   .cuted-button {
-    @apply bg-[#FFFFF0] w-[275px] h-[56px] relative flex items-center cursor-pointer
+    @apply bg-[#FFFFF0] w-[275px] h-[56px] relative flex items-center cursor-pointer;
+  }
+
+  .cuted-skills-wrapper {
+    @apply w-[200px] h-[54px] p-[2px];
+  }
+
+  .cuted-skills-item {
+    @apply w-full h-full;
   }
 }
 
@@ -36,6 +52,15 @@ body {
 
 .cuted-button {
   background: linear-gradient(56deg, transparent 10px, #FFFFF0 0);
+}
+
+.cuted-skills-wrapper {
+  background: linear-gradient(56deg, transparent 10px,#C161C9  15%, #545AE9 35%, #3766a4 80%, #4959EC1A 100%);
+}
+
+.cuted-skills-item {
+  background: linear-gradient(56deg, transparent 11px, #101720 0);
+
 }
 
 .gradient-border-right {

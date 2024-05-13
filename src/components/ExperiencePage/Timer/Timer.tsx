@@ -17,10 +17,10 @@ export const Timer: FC = () => {
 
   return (
     <div className=" float-end w-[50%] flex justify-evenly">
-      <div className='text-[#08CAD4] font-semibold'>
+      <div className='text-titleColor font-semibold'>
         {"total count:".toUpperCase()}
       </div>
-      <div className='text-[#FFFFF0]'>
+      <div className='text-mainTextColor'>
         { `Years: ${timeElapsed.years || 0} Month: ${timeElapsed.months || 0}` }
       </div>
     </div>
