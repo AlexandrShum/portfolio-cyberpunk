@@ -8,6 +8,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: rgba(16, 23, 32, 1);
   --background-end-rgb: rgba(16, 23, 32, 1);
+  --left-pos-second-text: 450px;
+  --right-pos-first-text: -450px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,7 +23,7 @@
 
 @layer components {
   .nav-link {
-    @apply font-chakra text-[32px] font-semibold leading-8 text-mainTextColor cursor-pointer;
+    @apply font-chakra text-[28px] font-semibold leading-8 text-mainTextColor cursor-pointer;
   }
 
   .text-title {
@@ -29,7 +31,7 @@
   }
 
   .text-description {
-    @apply text-mainTextColor text-xl font-normal;
+    @apply text-mainTextColor text-lg font-normal;
   }
 
   .cuted-button {
@@ -48,6 +50,10 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: rgba(16, 23, 32, 1);
+}
+
+.animated-text-shadow {
+ text-shadow: #101720 10px 8px 15px;
 }
 
 .cuted-button {
@@ -79,6 +85,38 @@ body {
 
 .inner-shadow {
   box-shadow: 0px 10px 40px 30px #050b12f5 inset;
+}
+
+.animated-text-block-1 {
+  right: var(--right-pos-first-text);
+  animation-name: fromTopToBottom;
+  animation-duration: 2s;
+}
+
+
+
+.animated-text-block-2 {
+  left: var(--left-pos-second-text);
+  animation-name: fromBottomToTop;
+  animation-duration: 2s;
+}
+
+@keyframes fromBottomToTop {
+  from {
+    left: 1000px;
+  }
+  to {
+    left: var(--left-pos-second-text);
+  }
+}
+
+@keyframes fromTopToBottom {
+  from {
+    right: 400px;
+  }
+  to {
+    right: var(--right-pos-first-text);
+  }
 }
 
 @layer utilities {

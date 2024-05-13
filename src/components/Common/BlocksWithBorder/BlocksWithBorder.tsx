@@ -1,6 +1,8 @@
 import React, { FC, PropsWithChildren } from "react";
 import Image from "next/image";
 
+import { AnimatedText } from "../Animation/AnimatedText"
+
 export const BlockWithBorderLeft: FC<PropsWithChildren> = ({ children }) => (
   <div className="w-[20%] rounded-l-2xl gradient-border-left">
     <div className="w-full h-full rounded-l-2xl bg-[#101720] relative">
@@ -8,6 +10,7 @@ export const BlockWithBorderLeft: FC<PropsWithChildren> = ({ children }) => (
       <div className="absolute left-[24px] top-[720px]">
         <Image src="/chip.png" alt="chip" width={200} height={200}/>
       </div>
+      <AnimatedText/>
       {children}
     </div>
   </div>

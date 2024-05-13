@@ -24,6 +24,9 @@ const config: Config = {
       },
       boxShadow: {
         "inner-picture": ""
+      },
+      animation: {
+        'pulse-slow': 'pulse 5s infinite',
       }
     },
   },

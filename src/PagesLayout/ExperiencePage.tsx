@@ -15,7 +15,7 @@ export const ExperiencePage: FC = () => {
 
       <BlockWithBorderRight>
         <Header />
-        <div className=" m-auto pt-[10%] w-[70%] relative z-20">
+        <div className=" m-auto pt-[5%] w-[70%] relative z-20">
           <ExperienceSection />
         </div>
       </BlockWithBorderRight>

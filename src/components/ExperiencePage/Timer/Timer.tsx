@@ -16,7 +16,7 @@ export const Timer: FC = () => {
   }, [startDate]);
 
   return (
-    <div className=" float-end w-[50%] flex justify-evenly">
+    <div className=" float-end w-[50%] flex justify-evenly pt-6">
       <div className='text-titleColor font-semibold'>
         {"total count:".toUpperCase()}
       </div>

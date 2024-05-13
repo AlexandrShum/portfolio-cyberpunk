@@ -25,7 +25,7 @@ export const ContactsSection: FC = () => (
         {socialMediaData.map((media: SocialMediaInterface , i: number) => {
           const { icon, href, target } = media;
           return (
-            <div>
+            <div key={i}>
               <Link href={ href } target={ target }>
                 <Image src={icon} alt={icon.slice(1)} width={40} height={40} />
               </Link>
