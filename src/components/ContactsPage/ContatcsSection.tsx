@@ -4,6 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { socialMediaData, SocialMediaInterface } from "./socialMediaData";
 
+import { getImageUrl } from "../../utils";
+
+
 export const ContactsSection: FC = () => (
   <div className="h-[50%] flex flex-col justify-between">
     <div>
@@ -27,7 +30,7 @@ export const ContactsSection: FC = () => (
           return (
             <div key={i}>
               <Link href={ href } target={ target }>
-                <Image src={icon} alt={icon.slice(1)} width={40} height={40} />
+                <Image src={getImageUrl(icon)} alt={icon.slice(1)} width={40} height={40} />
               </Link>
             </div>
           );
