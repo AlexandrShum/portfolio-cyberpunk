@@ -24,7 +24,7 @@ export const BlockWithBorderLeft: FC<PropsWithChildren> = ({ children }) => (
 export const BlockWithBorderRight: FC<PropsWithChildren> = ({ children }) => (
   <div className="gradient-border-right w-[57%] rounded-r-2xl">
     <div className=" bg-[#101720] rounded-r-2xl w-full h-full relative">
-    <Image src="/scheme.png" alt="scheme" width={600} height={1100} className="absolute"/>
+    <Image src={getImageUrl("/scheme.png")} alt="scheme" width={600} height={1100} className="absolute"/>
     <div
       className="absolute right-[-300px] top-[200px] bg-contain bg-no-repeat w-[1000px] h-[1000px]"
       style={{ backgroundImage: `url(${getImageUrl("/elipse-right.png")})`}}
