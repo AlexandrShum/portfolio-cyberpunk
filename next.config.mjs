@@ -2,9 +2,6 @@
 
 const isProd = process.env.NODE_ENV === "production";
 
-const assetPrefix = `/${repo}/`
-const basePath = `/${repo}`
-
 const nextConfig = {
   output: "export",
   reactStrictMode: true,
