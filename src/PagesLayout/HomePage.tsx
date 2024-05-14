@@ -1,3 +1,4 @@
+"use client"
 import React, { FC } from "react";
 import {
   Header,
@@ -6,9 +7,11 @@ import {
   BlockWithBorderLeft,
   BlockWithBorderRight,
 } from "../components";
+import { usePathname } from "next/navigation";
 
 export const HomePage: FC = () => {
-  console.log(process.env.NODE_ENV)
+  const path = usePathname();
+  console.log(process.env.NODE_ENV, path)
   return (
     <div className="flex h-[100vh] max-h-[1080px] relative overflow-hidden w-full">
       <BlockWithBorderLeft />
