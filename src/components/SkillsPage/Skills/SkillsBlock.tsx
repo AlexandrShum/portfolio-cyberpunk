@@ -11,7 +11,7 @@ export const SkillsBlock: FC<SkillDataInterface> = ({ title, iconHref }) => (
         <div className="mx-4">
           <Image src={getImageUrl(iconHref)} alt={title} width={24} height={24} />
         </div>
-        <div>
+        <div className="text-mainTextColor">
           { title }
         </div>
       </div>
