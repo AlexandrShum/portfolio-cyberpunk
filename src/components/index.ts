@@ -1,6 +1,6 @@
 import { Header } from "./Header/Header";
 import { MainPageContent, DownloadCVButton } from "./MainPage";
-import { BlockWithBorderLeft, BlockWithBorderRight } from "./Common";
+import { BlockWithBorderLeft, BlockWithBorderRight, PixelRain } from "./Common";
 import { ExperienceSection } from "./ExperiencePage/ExperienceSection";
 import { SkillSection } from "./SkillsPage/SkillsSection";
 import { ContactsSection } from "./ContactsPage/ContatcsSection";
@@ -13,5 +13,6 @@ export {
   BlockWithBorderRight,
   ExperienceSection,
   SkillSection,
-  ContactsSection
+  ContactsSection,
+  PixelRain
 };
