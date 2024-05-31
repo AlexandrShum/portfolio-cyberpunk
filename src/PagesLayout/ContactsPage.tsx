@@ -3,7 +3,8 @@ import {
   Header,
   BlockWithBorderLeft,
   BlockWithBorderRight,
-  ContactsSection
+  ContactsSection,
+  MobileHeader
 } from "../components";
 
 import { getImageUrl } from "../utils";
@@ -25,6 +26,7 @@ export const ContactsPage: FC = () => {
           <ContactsSection />
         </div>
       </BlockWithBorderRight>
+      <MobileHeader />
     </div>
   );
 };

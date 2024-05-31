@@ -3,7 +3,8 @@ import {
   Header,
   BlockWithBorderLeft,
   BlockWithBorderRight,
-  SkillSection
+  SkillSection,
+  MobileHeader
 } from "../components";
 
 import { getImageUrl } from "../utils";
@@ -25,6 +26,7 @@ export const SkillsPage: FC = () => {
           <SkillSection />
         </div>
       </BlockWithBorderRight>
+      <MobileHeader />
     </div>
   );
 };

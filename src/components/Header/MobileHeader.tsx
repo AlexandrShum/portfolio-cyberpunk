@@ -12,7 +12,6 @@ export const MobileHeader: FC = () => {
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
-  console.log(isMenuOpen)
 
   return (
     <div className="w-full h-[44px] md:hidden relative z-[50]">

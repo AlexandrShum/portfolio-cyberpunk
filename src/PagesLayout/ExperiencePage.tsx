@@ -3,7 +3,8 @@ import {
   Header,
   BlockWithBorderLeft,
   BlockWithBorderRight,
-  ExperienceSection
+  ExperienceSection,
+  MobileHeader
 } from "../components";
 
 import { getImageUrl } from "../utils";
@@ -25,6 +26,7 @@ export const ExperiencePage: FC = () => {
           <ExperienceSection />
         </div>
       </BlockWithBorderRight>
+      <MobileHeader />
     </div>
   );
 };
