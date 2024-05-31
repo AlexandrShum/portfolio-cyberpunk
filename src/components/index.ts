@@ -1,4 +1,4 @@
-import { Header } from "./Header/Header";
+import { Header, MobileHeader } from "./Header";
 import { MainPageContent, DownloadCVButton } from "./MainPage";
 import { BlockWithBorderLeft, BlockWithBorderRight, PixelRain } from "./Common";
 import { ExperienceSection } from "./ExperiencePage/ExperienceSection";
@@ -7,6 +7,7 @@ import { ContactsSection } from "./ContactsPage/ContatcsSection";
 
 export {
   Header,
+  MobileHeader,
   MainPageContent,
   DownloadCVButton,
   BlockWithBorderLeft,

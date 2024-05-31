@@ -14,7 +14,7 @@ export const ContactsPage: FC = () => {
 
       <BlockWithBorderLeft />
       <div
-        className=" bg-100 bg-no-repeat w-[23%] inner-shadow"
+        className="hidden xl:block bg-100 bg-no-repeat w-[23%] inner-shadow"
         style={{ backgroundImage: `url(${getImageUrl("/contacts_page_picture.png")})`}}
       >
       </div>

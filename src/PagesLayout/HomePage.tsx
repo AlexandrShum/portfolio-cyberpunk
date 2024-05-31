@@ -5,6 +5,7 @@ import {
   DownloadCVButton,
   BlockWithBorderLeft,
   BlockWithBorderRight,
+  MobileHeader,
 } from "../components";
 
 import { getImageUrl } from "../utils";
@@ -14,7 +15,7 @@ export const HomePage: FC = () => {
     <div className="flex h-[100vh] max-h-[1080px] relative overflow-hidden w-full">
       <BlockWithBorderLeft />
       <div
-        className="bg-100 bg-no-repeat w-[23%] inner-shadow"
+        className="hidden xl:block bg-100 bg-no-repeat w-[23%] inner-shadow"
         style={{ backgroundImage: `url(${getImageUrl("/main_page_picture.png")})`}}
       ></div>
 
@@ -27,6 +28,8 @@ export const HomePage: FC = () => {
           </div>
         </div>
       </BlockWithBorderRight>
+
+      <MobileHeader />
     </div>
   );
 };

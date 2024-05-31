@@ -7,7 +7,7 @@ export const PixelRain: FC = () => {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext('2d', { willReadFrequently: true });
     const myImage = new Image();
     const particlesArray = [];
     const numberOfParticles = 5000;

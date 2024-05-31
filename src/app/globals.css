@@ -66,7 +66,12 @@ body {
 
 .cuted-skills-item {
   background: linear-gradient(56deg, transparent 11px, #101720 0);
+}
 
+.gradient-background {
+  background-image: -webkit-linear-gradient(272deg, #4959EC26 15%, #545AE9 25%, #C161C9 45%, #4959EC 65%, #4959EC26 80%, #4959EC 90%, #C161C9 100%);
+  background-image: -moz-linear-gradient(272deg, #ee82ee, slateblue, #ffd86a, purple);
+  background-image: -o-linear-gradient(272deg, #4959EC, slateblue, #ffd86a, purple);
 }
 
 .gradient-border-right {
@@ -93,13 +98,81 @@ body {
   animation-duration: 2s;
 }
 
-
-
 .animated-text-block-2 {
   left: var(--left-pos-second-text);
   animation-name: fromBottomToTop;
   animation-duration: 2s;
 }
+
+.hamburger-menu {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  width: 33px;
+  height: 33px;
+  cursor: pointer;
+  z-index: 50;
+}
+
+.hamburger-menu > span,
+.hamburger-menu > span::before,
+.hamburger-menu > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #5769AF;
+  transition-duration: .25s;
+}
+.hamburger-menu > span::before {
+  content: '';
+  top: -11px;
+}
+.hamburger-menu > span::after {
+  content: '';
+  top: 11px;
+}
+
+.menubox {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #161D32;
+  transition-duration: .25s;
+  z-index: 5;
+}
+
+.menubox-open {
+  visibility: visible;
+  position: fixed;
+  top: 58px;
+  width: 100%;
+  height: 100%;
+  background-color: #161D32;
+  transition-duration: .25s;
+  z-index: 5;
+}
+
+#menu-toggle{
+  opacity: 0;
+}
+
+#menu-toggle:checked ~ .hamburger-menu > span{
+  transform: rotate(45deg);
+}
+#menu-toggle:checked ~ .hamburger-menu > span::before{
+  top: 0;
+  transform: rotate(0);
+}
+#menu-toggle:checked ~ .hamburger-menu > span::after{
+  top: 0;
+  transform: rotate(90deg);
+}
+
 
 @keyframes fromBottomToTop {
   from {

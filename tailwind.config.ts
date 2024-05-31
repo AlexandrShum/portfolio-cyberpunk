@@ -8,6 +8,12 @@ const config: Config = {
     "./src/PagesLayout/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
+    screens: {
+      "xs": "375px",
+      "md": "768px",
+      "lg": "1280px",
+      "xl": "1536px"
+    },
     colors: {
       "titleColor": "#08CAD4",
       "mainTextColor": "#FFFFF0"
