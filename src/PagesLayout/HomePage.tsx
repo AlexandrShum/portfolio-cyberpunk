@@ -7,6 +7,7 @@ import {
   BlockWithBorderRight,
   MobileHeader,
 } from "../components";
+import Image from "next/image"
 
 import { getImageUrl } from "../utils";
 
@@ -30,7 +31,9 @@ export const HomePage: FC = () => {
       </BlockWithBorderRight>
 
       <MobileHeader />
-      <div className="md:hidden w-full h-full pt-16 max-h-[740px] flex flex-col justify-between items-end">
+      <div className="relative md:hidden w-full h-full pt-16 max-h-[740px] flex flex-col justify-between items-end">
+        <Image src={getImageUrl("/scheme.png")} alt="scheme" width={760} height={700} className="-z-30 absolute top-0"/>
+        <Image src={getImageUrl("/elipse-left.png")} alt="elipse" width={300} height={700} className="-z-30 absolute top-[350px] left-[-100px] opacity-40"/>
         <MainPageContent />
         <div className=" p-4">
           <DownloadCVButton />
