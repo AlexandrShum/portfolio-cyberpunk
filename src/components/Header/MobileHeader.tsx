@@ -14,7 +14,7 @@ export const MobileHeader: FC = () => {
   };
 
   return (
-    <div className="w-full h-[44px] md:hidden relative z-[50]">
+    <div className="w-full h-[44px] md:hidden fixed z-[50]">
       <div className="gradient-background pb-[1px] relative z-[50]">
         <div className="w-full h-full flex justify-between items-center bg-[#161D32] relative z-[50]">
           <div className="p-2">

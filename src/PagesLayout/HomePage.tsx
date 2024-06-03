@@ -30,6 +30,12 @@ export const HomePage: FC = () => {
       </BlockWithBorderRight>
 
       <MobileHeader />
+      <div className="md:hidden w-full h-full pt-16 max-h-[740px] flex flex-col justify-between items-end">
+        <MainPageContent />
+        <div className=" p-4">
+          <DownloadCVButton />
+        </div>
+      </div>
     </div>
   );
 };
