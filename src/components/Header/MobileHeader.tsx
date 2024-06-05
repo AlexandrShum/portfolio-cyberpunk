@@ -1,6 +1,7 @@
 "use client";
 import React, { FC, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { LinkDataInterface, linksData } from "./linksData";
 import { NavLink } from "./NavLink";
 
@@ -18,7 +19,9 @@ export const MobileHeader: FC = () => {
       <div className="gradient-background pb-[1px] relative z-[50]">
         <div className="w-full h-full flex justify-between items-center bg-[#161D32] relative z-[50]">
           <div className="p-2">
-            <Image src={getImageUrl("/logo.png")} alt="logo" width={40} height={40} />
+            <Link href="/">
+              <Image src={getImageUrl("/logo.png")} alt="logo" width={40} height={40} />
+            </Link>
           </div>
           <div className=" mr-2 relative w-7">
             <input id="menu-toggle" type="checkbox" onChange={toggleMenu} checked={isMenuOpen}/>
