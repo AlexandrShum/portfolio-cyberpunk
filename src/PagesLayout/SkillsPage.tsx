@@ -7,13 +7,14 @@ import {
   MobileHeader
 } from "../components";
 
+import Image from "next/image"; 
+
 import { getImageUrl } from "../utils";
 
 
 export const SkillsPage: FC = () => {
   return (
-    <div className="flex h-[100vh] max-h-[1080px] relative overflow-hidden w-full">
-
+    <div className="flex md:h-[100vh] h-[375px] md:max-h-[1080px] relative md:overflow-hidden w-full">
       <BlockWithBorderLeft />
       <div
         className="hidden xl:block bg-100 bg-no-repeat w-[23%] inner-shadow"
@@ -27,6 +28,12 @@ export const SkillsPage: FC = () => {
         </div>
       </BlockWithBorderRight>
       <MobileHeader />
+      <div className="relative md:hidden w-full h-full pt-[56px] flex flex-col justify-between items-end">
+        <Image src={getImageUrl("/scheme.png")} alt="scheme" width={760} height={700} className="-z-30 absolute top-0"/>
+        <Image src={getImageUrl("/elipse-mobile-right.png")} alt="elipse" width={300} height={700} className="-z-30 absolute top-[50px] right-[0px]" />
+        <Image src={getImageUrl("/elipse-mobile-left.png")} alt="elipse" width={300} height={700} className="-z-30 absolute top-[250px] left-[0px]" />
+        <SkillSection />
+      </div>
     </div>
   );
 };

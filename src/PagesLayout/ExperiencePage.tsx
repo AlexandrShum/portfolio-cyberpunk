@@ -30,9 +30,10 @@ export const ExperiencePage: FC = () => {
       </BlockWithBorderRight>
 
       <MobileHeader />
-      <div className="relative md:hidden w-full h-full pt-16 max-h-[680px] flex flex-col justify-between items-end">
+      <div className="relative md:hidden w-full max-w-[100vw] h-full pt-16 max-h-[680px] flex flex-col justify-between items-end">
         <Image src={getImageUrl("/scheme.png")} alt="scheme" width={760} height={700} className="-z-30 absolute top-0"/>
-        <Image src={getImageUrl("/elipse-left.png")} alt="elipse" width={300} height={700} className="-z-30 absolute top-[350px] left-[-100px] opacity-40" />
+        <Image src={getImageUrl("/elipse-mobile-right.png")} alt="elipse" width={300} height={700} className="-z-30 absolute top-[50px] right-[0px]" />
+        <Image src={getImageUrl("/elipse-mobile-left.png")} alt="elipse" width={300} height={700} className="-z-30 absolute top-[460px] left-[0px]" />
         <ExperienceSection />
       </div>
     </div>
