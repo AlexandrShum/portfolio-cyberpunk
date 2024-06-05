@@ -7,11 +7,13 @@ import {
   MobileHeader
 } from "../components";
 
+import Image from "next/image";
+
 import { getImageUrl } from "../utils";
 
 export const ExperiencePage: FC = () => {
   return (
-    <div className="flex h-[100vh] max-h-[1080px] relative overflow-hidden w-full">
+    <div className="flex h-[100vh] max-h-[1080px] relative md:overflow-hidden w-full">
 
       <BlockWithBorderLeft />
       <div
@@ -26,7 +28,13 @@ export const ExperiencePage: FC = () => {
           <ExperienceSection />
         </div>
       </BlockWithBorderRight>
+
       <MobileHeader />
+      <div className="relative md:hidden w-full h-full pt-16 max-h-[680px] flex flex-col justify-between items-end">
+        <Image src={getImageUrl("/scheme.png")} alt="scheme" width={760} height={700} className="-z-30 absolute top-0"/>
+        <Image src={getImageUrl("/elipse-left.png")} alt="elipse" width={300} height={700} className="-z-30 absolute top-[350px] left-[-100px] opacity-40" />
+        <ExperienceSection />
+      </div>
     </div>
   );
 };

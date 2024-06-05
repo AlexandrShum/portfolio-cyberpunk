@@ -1,9 +1,9 @@
-"use client"
-import React, { FC, useState, useEffect } from 'react';
+"use client";
+import React, { FC, useState, useEffect } from "react";
 import { calculateElapsedTime, CounterFunctionInterface } from "./counter";
 
 export const Timer: FC = () => {
-  const startDate = new Date('2020-11-01');
+  const startDate = new Date("2020-11-01");
   const [timeElapsed, setTimeElapsed] = useState<CounterFunctionInterface>({});
 
   useEffect(() => {
@@ -16,12 +16,16 @@ export const Timer: FC = () => {
   }, [startDate]);
 
   return (
-    <div className=" float-end w-[50%] flex justify-evenly pt-6">
-      <div className='text-titleColor font-semibold'>
-        {"total count:".toUpperCase()}
-      </div>
-      <div className='text-mainTextColor'>
-        { `Years: ${timeElapsed.years || 0} Month: ${timeElapsed.months || 0}` }
+    <div className="flex justify-end py-4 md:pt-0 md:pb-8">
+      <div className="cuted-div-wrapper-variant-1 ">
+        <div className="cuted-div-item flex items-center justify-center text-base md:text-xl italic">
+          <div className="text-titleColor">
+            { "Total expirience" }
+          </div>
+          <div className="text-mainTextColor whitespace-pre">
+            {` ${timeElapsed.years || 0} years ${timeElapsed.months || 0} month`}
+          </div>
+        </div>
       </div>
     </div>
   );

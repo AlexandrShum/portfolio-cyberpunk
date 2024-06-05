@@ -39,12 +39,18 @@
     background: linear-gradient(56deg, transparent 5px, #FFFFF0 0);
   }
 
-  .cuted-skills-wrapper {
+  .cuted-div-wrapper {
     @apply w-[200px] h-[54px] p-[2px];
   }
 
-  .cuted-skills-item {
+  .cuted-div-wrapper-variant-1 {
+    @apply w-[280px] md:w-[340px] h-[32px] md:h-[56px] p-[2px];
+    background: linear-gradient(56deg, transparent 6px, #545AE9 5%, #4959EC1A  35%, #C161C9 80%, #3766a4 100%);
+  }
+
+  .cuted-div-item {
     @apply w-full h-full;
+    background: linear-gradient(56deg, transparent 6px, #101720 0);
   }
 }
 
@@ -65,15 +71,21 @@ body {
   .cuted-button {
     background: linear-gradient(56deg, transparent 10px, #FFFFF0 0);
   }
+
+  .cuted-div-wrapper-variant-1 {
+    background: linear-gradient(56deg, transparent 10px, #545AE9 5%, #4959EC1A  35%, #C161C9 80%, #3766a4 100%); 
+  }
+
+  .cuted-div-item {
+    background: linear-gradient(56deg, transparent 11px, #101720 0);
+  }
 }
 
-.cuted-skills-wrapper {
+.cuted-div-wrapper {
   background: linear-gradient(56deg, transparent 10px,#C161C9  15%, #545AE9 35%, #3766a4 80%, #4959EC1A 100%);
 }
 
-.cuted-skills-item {
-  background: linear-gradient(56deg, transparent 11px, #101720 0);
-}
+
 
 .gradient-background {
   background-image: -webkit-linear-gradient(272deg, #4959EC26 15%, #545AE9 25%, #C161C9 45%, #4959EC 65%, #4959EC26 80%, #4959EC 90%, #C161C9 100%);
