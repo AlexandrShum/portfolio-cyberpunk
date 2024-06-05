@@ -9,7 +9,7 @@ export const BlockWithBorderLeft: FC<PropsWithChildren> = ({ children }) => (
   <div className=" hidden xl:block w-[20%] rounded-l-2xl gradient-border-left">
     <div className="w-full h-full rounded-l-2xl bg-[#101720] relative">
       <div
-        className="absolute left-[-400px] top-[-100px] bg-contain bg-no-repeat w-[800px] h-[800px]"
+        className="absolute left-[-400px] top-[-100px] bg-contain bg-no-repeat w-[800px] h-[800px] opacity-60"
         style={{ backgroundImage: `url(${getImageUrl("/elipse-left.png")})`}}
       >
       </div>
@@ -28,7 +28,7 @@ export const BlockWithBorderRight: FC<PropsWithChildren> = ({ children }) => (
       <Image src={getImageUrl("/scheme.png")} alt="scheme" width={600} height={1100} className="absolute"/>
       <PixelRain />
     <div
-      className="absolute right-[-300px] top-[200px] bg-contain bg-no-repeat w-[1000px] h-[1000px]"
+      className="absolute right-[-300px] top-[200px] bg-contain bg-no-repeat w-[1000px] h-[1000px] opacity-60"
       style={{ backgroundImage: `url(${getImageUrl("/elipse-right.png")})`}}
     >
     </div>
