@@ -15,7 +15,7 @@ export const SkillSection: FC = () => (
         {"My skills"}
       </div>
     </div>
-    <div className="flex flex-wrap justify-between px-4 py-8 md:pt-0 gap-5 md:gap-10 md:pb-14">
+    <div className="flex flex-wrap justify-between px-4 py-8 md:pt-0 gap-5 md:gap-6 md:pb-14">
       {skillsData.map((skill: SkillDataInterface, i: number) => (
         <SkillsBlock {...skill} key={i} />
       ))}
