@@ -216,3 +216,25 @@ body {
     text-wrap: balance;
   }
 }
+
+.scrollable-container {
+  overflow-y: auto;
+}
+
+.scrollable-container::-webkit-scrollbar {
+  width: 4px; /* Ширина полосы прокрутки */
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+  background-color: #08cad427; /* Цвет фона трека */
+  border-radius: 4px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background-color: #695acdca;
+  border-radius: 4px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+  background-color: #695acd;
+}
