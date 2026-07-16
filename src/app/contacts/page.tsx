@@ -1,6 +1,6 @@
 import { ContactsPage } from "../../PagesLayout";
 
-export default function Home() {
+export default function Contacts() {
   return (
     <main className="flex justify-center items-center">
       <ContactsPage />
