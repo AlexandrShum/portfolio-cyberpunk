@@ -17,7 +17,7 @@ export const SkillsPage: FC = () => {
     <div className="flex md:h-[100vh] h-[375px] md:max-h-[1080px] relative md:overflow-hidden w-full">
       <BlockWithBorderLeft />
       <div
-        className="hidden xl:block bg-100 bg-no-repeat w-[23%] inner-shadow"
+        className="hidden md:block bg-100 bg-no-repeat w-[23%] inner-shadow"
         style={{ backgroundImage: `url(${getImageUrl("/skills_page_picture.png")})`}}
       ></div>
 

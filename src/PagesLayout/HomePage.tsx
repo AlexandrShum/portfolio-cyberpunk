@@ -16,7 +16,7 @@ export const HomePage: FC = () => {
     <div className="flex h-[100vh] max-h-[1080px] relative scrollable-container md:overflow-hidden w-full">
       <BlockWithBorderLeft />
       <div
-        className="hidden xl:block bg-100 bg-no-repeat w-[23%] inner-shadow"
+        className="hidden md:block bg-100 bg-no-repeat w-[23%] inner-shadow"
         style={{
           backgroundImage: `url(${getImageUrl('/main_page_picture.png')})`,
         }}
@@ -24,7 +24,7 @@ export const HomePage: FC = () => {
 
       <BlockWithBorderRight>
         <Header />
-        <div className=" m-auto pt-[20%] w-[60%] relative z-20">
+        <div className=" m-auto pt-[10%] w-[60%] relative z-20">
           <MainPageContent />
           <div className="pt-16 float-right">
             <DownloadCVButton />
