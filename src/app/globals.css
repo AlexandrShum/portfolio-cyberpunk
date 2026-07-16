@@ -115,12 +115,16 @@ body {
   right: var(--right-pos-first-text);
   animation-name: fromTopToBottom;
   animation-duration: 2s;
+  animation-timing-function: ease-out;
+  will-change: right;
 }
 
 .animated-text-block-2 {
   left: var(--left-pos-second-text);
   animation-name: fromBottomToTop;
   animation-duration: 2s;
+  animation-timing-function: ease-out;
+  will-change: left;
 }
 
 .hamburger-menu {

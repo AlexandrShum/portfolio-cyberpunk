@@ -15,15 +15,24 @@ export const Timer: FC = () => {
     return () => clearInterval(intervalId);
   }, [startDate]);
 
+  const years = timeElapsed.years;
+  const month = timeElapsed.months;
+  const isCalculating = years === undefined || month === undefined;
+
   return (
     <div className="flex justify-end py-4 md:pt-0 md:pb-8">
       <div className="cuted-div-wrapper-variant-1 ">
         <div className="cuted-div-item flex items-center justify-center text-base md:text-xl italic">
-          <div className="text-titleColor">
-            { "Total expirience" }
+          <div className="text-titleColor mr-2">
+            { "Total expirience:" }
           </div>
           <div className="text-mainTextColor whitespace-pre">
-            {` ${timeElapsed.years || 0} years ${timeElapsed.months || 0} month`}
+            {
+              isCalculating ? 
+              'Calculating...' :
+              `${years} years ${month} month`
+
+            }
           </div>
         </div>
       </div>
