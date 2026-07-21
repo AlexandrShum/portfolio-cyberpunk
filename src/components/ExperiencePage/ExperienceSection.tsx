@@ -4,9 +4,9 @@ import { Timer } from "./Timer/Timer";
 import { experienceData, ExperienceDataInterface } from "./data";
 
 export const ExperienceSection: FC = () => (
-  <div className="w-full">
+  <div className="w-full h-full">
     <Timer />
-    <div className="scrollable-container md:max-h-[700px]">
+    <div className="scrollable-container h-full ">
       {experienceData.map((item: ExperienceDataInterface, i: number) => (
         <ExperienceBlock key={i} {...item} count={i + 1} />
       ))}
