@@ -1,4 +1,5 @@
-import React, { FC } from "react";
+'use client';
+import React, { FC } from 'react';
 import {
   Header,
   MainPageContent,
@@ -6,10 +7,10 @@ import {
   BlockWithBorderLeft,
   BlockWithBorderRight,
   MobileHeader,
-} from "../components";
-import Image from "next/image"
+} from '../components';
+import Image from 'next/image';
 
-import { getImageUrl } from "../utils";
+import { getImageUrl } from '../utils';
 
 export const HomePage: FC = () => {
   return (
@@ -20,18 +21,21 @@ export const HomePage: FC = () => {
         style={{
           backgroundImage: `url(${getImageUrl('/main_page_picture.png')})`,
         }}
-      ></div>
+      />
 
       <BlockWithBorderRight>
         <Header />
-        <div className=" m-auto pt-[10%] w-[60%] relative z-20">
-          <MainPageContent />
+        <div className=" m-auto pt-[10%] w-[60%] h-[80%] md:max-h-[70%] relative z-20">
+          <div className="w-[100%] h-[100%] scrollable-container overflow-y-auto">
+            <MainPageContent />
+          </div>
           <div className="pt-16 float-right">
             <DownloadCVButton />
           </div>
         </div>
       </BlockWithBorderRight>
 
+      {/* Mobile View */}
       <MobileHeader />
       <div className="relative md:hidden w-full h-full pt-16 max-h-[680px] flex flex-col justify-between items-end">
         <Image

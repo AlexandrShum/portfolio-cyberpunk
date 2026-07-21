@@ -3,7 +3,7 @@ import React, { FC } from "react";
 export const AnimatedText: FC = () => {
 
   return (
-    <div className="pl-[200px]  rotate-90 relative">
+    <div className="rotate-90 relative">
       
       <div className="absolute top-[-100px] w-fit animated-text-block-2">
         <Text whitePart="DEV" otherPart="ELOPER"/>
@@ -16,7 +16,7 @@ export const AnimatedText: FC = () => {
 }
 
 const Text: FC<{whitePart: string, otherPart: string}> = ({ whitePart, otherPart }) => (
-  <div className="flex justify-evenly text-[96px] leading-[80px] relative z-30">
+  <div className="flex justify-evenly text-[clamp(48px,12vh,96px)] leading-[80px] relative z-30">
     <div className="text-mainTextColor animated-text-shadow">
       {whitePart}
     </div>

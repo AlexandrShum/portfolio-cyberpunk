@@ -52,7 +52,7 @@ export const MainPageContent: FC = () => {
           style={{ height: '100%', width: '100%' }}
         />
       </div>
-      <div className="flex flex-col justify-between gap-4 scrollable-container min-h-[20%] max-h-fit md:max-h-[500px] md:pr-4">
+      <div className="flex flex-col justify-between gap-4 scrollable-container min-h-[20%] max-h-fit md:pr-4">
         {summary.map((part, i) => (
           <div key={i} className=" text-description font-normal text-justify px-4 md:px-0">
             {part}

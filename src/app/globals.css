@@ -8,8 +8,11 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: rgba(16, 23, 32, 1);
   --background-end-rgb: rgba(16, 23, 32, 1);
-  --left-pos-second-text: 450px;
-  --right-pos-first-text: -450px;
+  /* --left-pos-second-text: 450px;
+  --right-pos-first-text: -450px; */
+  --text-position: clamp(250px, 50vh, 450px);
+  --left-pos-second-text: var(--text-position);
+  --right-pos-first-text: calc(var(--text-position) * -1);
 }
 
 @media (prefers-color-scheme: dark) {
