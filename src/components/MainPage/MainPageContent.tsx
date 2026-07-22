@@ -37,7 +37,7 @@ export const MainPageContent: FC = () => {
 
   return (
     <div className=" text-center pt-4 md:pt-0 md:text-left">
-      <div className=" text-titleColor font-semibold text-base md:text-2xl tracking-widest md:tracking-title md:text-justify">
+      <div className=" text-titleColor font-semibold text-base md:text-2xl tracking-widest md:text-start">
         {'HI, I`M ALEXANDR SHUMAKOV'}
       </div>
       <div className=" text-description pb-4 md:pb-7 italic">

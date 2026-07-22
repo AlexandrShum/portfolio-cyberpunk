@@ -25,11 +25,11 @@ export const HomePage: FC = () => {
 
       <BlockWithBorderRight>
         <Header />
-        <div className=" m-auto pt-[10%] w-[60%] h-[80%] md:max-h-[70%] relative z-20">
+        <div className=" flex flex-col justify-between items-end m-auto pt-[10%] w-[70%] h-[80%] md:max-h-[80%] relative z-20">
           <div className="w-[100%] h-[100%] scrollable-container overflow-y-auto">
             <MainPageContent />
           </div>
-          <div className="pt-16 float-right">
+          <div className="pt-10 float-right">
             <DownloadCVButton />
           </div>
         </div>

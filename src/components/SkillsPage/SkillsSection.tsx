@@ -20,8 +20,8 @@ export const SkillSection: FC = () => (
     </div>
 
     {/* Desktop */}
-    <div className="w-full h-full md:max-h-[80%] scrollable-container pr-4">
-      <div className="flex flex-wrap justify-between px-4 py-8 md:pt-0 gap-5 md:gap-6 md:pb-14">
+    <div className="w-full h-full md:max-h-[80%] scrollable-container md:pr-4">
+      <div className="flex flex-wrap justify-between px-4 md:px-0 py-8 md:pt-0 gap-5 md:gap-4 md:pb-14">
         {skillsData.map((skill: SkillDataInterface, i: number) => (
           <SkillsBlock {...skill} key={i} />
         ))}

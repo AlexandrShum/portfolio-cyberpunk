@@ -10,7 +10,7 @@
   --background-end-rgb: rgba(16, 23, 32, 1);
   /* --left-pos-second-text: 450px;
   --right-pos-first-text: -450px; */
-  --text-position: clamp(250px, 50vh, 450px);
+  --text-position: clamp(200px, 50vh, 430px);
   --left-pos-second-text: var(--text-position);
   --right-pos-first-text: calc(var(--text-position) * -1);
 }

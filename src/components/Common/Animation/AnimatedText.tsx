@@ -16,7 +16,7 @@ export const AnimatedText: FC = () => {
 }
 
 const Text: FC<{whitePart: string, otherPart: string}> = ({ whitePart, otherPart }) => (
-  <div className="flex justify-evenly text-[clamp(48px,12vh,96px)] leading-[80px] relative z-30">
+  <div className="flex justify-evenly text-[clamp(40px,12vh,72px)] leading-[80px] relative z-30">
     <div className="text-mainTextColor animated-text-shadow">
       {whitePart}
     </div>
